@@ -1,17 +1,17 @@
 # Arcade-SEGA_SYSTEM_1
--- Arcade: SEGA System 1  port to MiST by Slingshot
---
--- Port to neptUNO and unamiga by Delgrom from Victor Trucco's MC2+ port
---
---
--- Keyboard inputs :
---
+Arcade: SEGA System 1  port to MiST by Slingshot
+
+Port to neptUNO and unamiga by Delgrom from Victor Trucco's MC2+ port
+
+Keyboard inputs :
+
 --   UP,DOWN,LEFT,RIGHT arrows : Movements
 --   SPACE       : Trig1
 --   CTRL        : Trig2
 --   ALT         : Trig3
 --
--- MAME/IPAC/JPAC Style Keyboard inputs:
+
+MAME/IPAC/JPAC Style Keyboard inputs:
 --   5           : Coin 1
 --   6           : Coin 2
 --   1           : Start 1 Player
@@ -21,10 +21,10 @@
 --   S           : Player 2 Trig2
 --   Q           : Player 2 Trig3
 --
--- 1 Joystick support.
+1 Joystick support.
 --
--- Megadrive Joystick 1 mode button, or Start + C buttons : Coin1
--- Megadrive Joystick 1 Start button : Start 1 Player
+Megadrive Joystick 1 mode button, or Start + C buttons : Coin1
+Megadrive Joystick 1 Start button : Start 1 Player
 ---------------------------------------------------------------------------------
 -- 
 -- Arcade: SEGA System 1  for MiSTer by MiSTer-X
