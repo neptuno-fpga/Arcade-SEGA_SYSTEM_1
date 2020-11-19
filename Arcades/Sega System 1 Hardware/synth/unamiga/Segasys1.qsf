@@ -204,10 +204,11 @@ set_location_assignment PIN_J1 -to AUDIO_R
 #set_location_assignment PIN_M7 -to mic_o
 #set_location_assignment PIN_M8 -to ear_i
 # I2S
-#set_location_assignment PIN_T5 -to SCLK
-#set_location_assignment PIN_T6 -to LRCLK
-#set_location_assignment PIN_R6 -to MCLK
-#set_location_assignment PIN_T7 -to SDIN
+# I2S
+set_location_assignment PIN_T5 -to SCLK
+set_location_assignment PIN_T6 -to LRCLK
+set_location_assignment PIN_R6 -to MCLK
+set_location_assignment PIN_T7 -to SDIN
 
 
 #UNAMIGA#
@@ -335,6 +336,7 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to VGA_VS
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AUDIO_L
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AUDIO_R
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SPI_DO
+set_global_assignment -name VHDL_FILE ../../i2s/audio_i2s.vhd
 set_global_assignment -name VHDL_FILE kbd_joystick_ua.vhd
 set_global_assignment -name QIP_FILE ../../sn76489/sn76489.qip
 set_global_assignment -name QIP_FILE ../../T80/T80.qip

@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at patrons.v(101): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at Segasys1_np1.sv(40): object "SDRAM_CLK" differs only in case from object "sdram_clk" in the same scope

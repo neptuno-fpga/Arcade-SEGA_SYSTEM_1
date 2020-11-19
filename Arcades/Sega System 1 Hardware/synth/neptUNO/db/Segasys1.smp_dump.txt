@@ -1,0 +1,21 @@
+
+State Machine - |Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|SEGASYS1_SPRITE:sprite|phaseHB
+Name phaseHB.00 phaseHB.10 phaseHB.01 
+phaseHB.00 0 0 0 
+phaseHB.01 1 0 1 
+phaseHB.10 1 1 0 
+
+State Machine - |Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|SEGASYS1_SPRITE:sprite|phaseHD
+Name phaseHD.1111 phaseHD.1110 phaseHD.1010 phaseHD.1001 phaseHD.1000 phaseHD.0111 phaseHD.0110 phaseHD.0100 phaseHD.0011 phaseHD.0010 phaseHD.0001 phaseHD.0000 
+phaseHD.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+phaseHD.0001 0 0 0 0 0 0 0 0 0 0 1 1 
+phaseHD.0010 0 0 0 0 0 0 0 0 0 1 0 1 
+phaseHD.0011 0 0 0 0 0 0 0 0 1 0 0 1 
+phaseHD.0100 0 0 0 0 0 0 0 1 0 0 0 1 
+phaseHD.0110 0 0 0 0 0 0 1 0 0 0 0 1 
+phaseHD.0111 0 0 0 0 0 1 0 0 0 0 0 1 
+phaseHD.1000 0 0 0 0 1 0 0 0 0 0 0 1 
+phaseHD.1001 0 0 0 1 0 0 0 0 0 0 0 1 
+phaseHD.1010 0 0 1 0 0 0 0 0 0 0 0 1 
+phaseHD.1110 0 1 0 0 0 0 0 0 0 0 0 1 
+phaseHD.1111 1 0 0 0 0 0 0 0 0 0 0 1 

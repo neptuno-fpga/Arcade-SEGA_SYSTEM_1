@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Segasys1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_MAIN:Main|SEGASYS1_PRGDEC:decr|SEGASYS1_DECT2:t2|DLROM:xort|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_4tg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_MAIN:Main|SEGASYS1_PRGDEC:decr|SEGASYS1_DECT1:t1|DLROM:dect|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_4tg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_MAIN:Main|SEGASYS1_PRGDEC:decr|SEGASYS1_DECT2:t2|DLROM:swpt|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_usg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|SEGASYS1_SPRITE:sprite|LineBuf:lbuf|DPRAM1024_11B:core|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_i6c2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_MAIN:Main|SRAM_4096:mainram|altsyncram:ramcore_rtl_0" CBX_FILE_NAME="altsyncram_jii1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|DLROM:clut|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_2tg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|SEGASYS1_SPRITE:sprite|altsyncram:hitsprnum_rtl_0" CBX_FILE_NAME="altsyncram_n8i1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|VRAM:vram0|VRAMs:ram0|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_nhi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_SOUND:Sound|SRAM_2048:wram|altsyncram:ramcore_rtl_0" CBX_FILE_NAME="altsyncram_7ii1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|SEGASYS1_SPRITE:sprite|altsyncram:hitsprvps_rtl_0" CBX_FILE_NAME="altsyncram_r8i1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|DPRAM2048:palram|altsyncram:core_rtl_1" CBX_FILE_NAME="altsyncram_03h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|DPRAM2048_8_16:sprram|DPRAM1024:core1|altsyncram:core_rtl_1" CBX_FILE_NAME="altsyncram_g2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|VRAM:vram0|VRAMs:ram0|altsyncram:core_rtl_1" CBX_FILE_NAME="altsyncram_g2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|VRAM:vram0|VRAMs:ram1|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_nhi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|VRAM:vram1|VRAMs:ram0|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_nhi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|mist_video:mist_video|osd:osd|altsyncram:osd_buffer_rtl_0" CBX_FILE_NAME="altsyncram_dle1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|VRAM:vram0|VRAMs:ram1|altsyncram:core_rtl_1" CBX_FILE_NAME="altsyncram_g2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|VRAM:vram1|VRAMs:ram0|altsyncram:core_rtl_1" CBX_FILE_NAME="altsyncram_g2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|VRAM:vram1|VRAMs:ram1|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_nhi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|mist_video:mist_video|scandoubler:scandoubler|altsyncram:sd_buffer_rtl_0" CBX_FILE_NAME="altsyncram_ovd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|DPRAM2048_8_16:sprram|DPRAM1024:core0|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_nhi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|VRAM:vram1|VRAMs:ram1|altsyncram:core_rtl_1" CBX_FILE_NAME="altsyncram_g2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|SEGASYS1_SPRITE:sprite|lpm_mult:Mult0" CBX_FILE_NAME="mult_pbt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|DPRAM2048:palram|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_7ii1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|DPRAM2048_8_16:sprram|DPRAM1024:core0|altsyncram:core_rtl_1" CBX_FILE_NAME="altsyncram_g2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|SEGASYSTEM1:System1_Top|SEGASYS1_VIDEO:Video|VIDCPUINTF:intf|DPRAM2048_8_16:sprram|DPRAM1024:core1|altsyncram:core_rtl_0" CBX_FILE_NAME="altsyncram_nhi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Segasys1_np1|pll_mist:pll|altpll:altpll_component" CBX_FILE_NAME="pll_mist_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

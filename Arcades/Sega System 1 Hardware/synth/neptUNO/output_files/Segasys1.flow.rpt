@@ -1,0 +1,136 @@
+Flow report for Segasys1
+Thu Nov 19 23:23:46 2020
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Thu Nov 19 23:23:34 2020      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; Segasys1                                   ;
+; Top-level Entity Name              ; Segasys1_np1                               ;
+; Family                             ; Cyclone IV E                               ;
+; Device                             ; EP4CE55F23C8                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 11,501 / 55,856 ( 21 % )                   ;
+;     Total combinational functions  ; 10,628 / 55,856 ( 19 % )                   ;
+;     Dedicated logic registers      ; 3,822 / 55,856 ( 7 % )                     ;
+; Total registers                    ; 3890                                       ;
+; Total pins                         ; 120 / 325 ( 37 % )                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 222,272 / 2,396,160 ( 9 % )                ;
+; Embedded Multiplier 9-bit elements ; 2 / 308 ( < 1 % )                          ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                             ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/19/2020 23:20:32 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Segasys1            ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                    ;
++-------------------------------------------------+---------------------------------------+---------------+--------------+------------+
+; Assignment Name                                 ; Value                                 ; Default Value ; Entity Name  ; Section Id ;
++-------------------------------------------------+---------------------------------------+---------------+--------------+------------+
+; COMPILER_SIGNATURE_ID                           ; 31264775030918.160582443206012        ; --            ; --           ; --         ;
+; ENABLE_SIGNALTAP                                ; Off                                   ; --            ; --           ; --         ;
+; MAX_CORE_JUNCTION_TEMP                          ; 85                                    ; --            ; --           ; --         ;
+; MIN_CORE_JUNCTION_TEMP                          ; 0                                     ; --            ; --           ; --         ;
+; NUM_PARALLEL_PROCESSORS                         ; All                                   ; --            ; --           ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS                  ; Half Signal Swing                     ; --            ; --           ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS                  ; Half Signal Swing                     ; --            ; --           ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS                 ; Half Vccio                            ; --            ; --           ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS                 ; Half Vccio                            ; --            ; --           ; --         ;
+; PARTITION_COLOR                                 ; 16764057                              ; --            ; Segasys1_np1 ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL             ; PLACEMENT_AND_ROUTING                 ; --            ; Segasys1_np1 ; Top        ;
+; PARTITION_NETLIST_TYPE                          ; SOURCE                                ; --            ; Segasys1_np1 ; Top        ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA         ; On                                    ; Off           ; --           ; --         ;
+; PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA ; On                                    ; Off           ; --           ; --         ;
+; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION         ; On                                    ; Off           ; --           ; --         ;
+; POWER_BOARD_THERMAL_MODEL                       ; None (CONSERVATIVE)                   ; --            ; --           ; --         ;
+; POWER_PRESET_COOLING_SOLUTION                   ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --           ; --         ;
+; PROJECT_OUTPUT_DIRECTORY                        ; output_files                          ; --            ; --           ; --         ;
+; SMART_RECOMPILE                                 ; On                                    ; Off           ; --           ; --         ;
+; TOP_LEVEL_ENTITY                                ; Segasys1_np1                          ; Segasys1      ; --           ; --         ;
+; USE_SIGNALTAP_FILE                              ; output_files/dect.stp                 ; --            ; --           ; --         ;
++-------------------------------------------------+---------------------------------------+---------------+--------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:01:03     ; 1.0                     ; 4755 MB             ; 00:00:59                           ;
+; Fitter                    ; 00:01:48     ; 1.0                     ; 5111 MB             ; 00:01:47                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4630 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 4792 MB             ; 00:00:10                           ;
+; Total                     ; 00:03:06     ; --                      ; --                  ; 00:02:59                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-C1K47OA  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-C1K47OA  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-C1K47OA  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-C1K47OA  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Segasys1 -c Segasys1
+quartus_fit --read_settings_files=off --write_settings_files=off Segasys1 -c Segasys1
+quartus_asm --read_settings_files=off --write_settings_files=off Segasys1 -c Segasys1
+quartus_sta Segasys1 -c Segasys1
+
+
+

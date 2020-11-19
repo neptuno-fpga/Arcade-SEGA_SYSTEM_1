@@ -109,8 +109,20 @@ assign stm_rst_o    = 1'bZ;
 assign stm_rx_o = 1'bZ;
 
 //no SRAM for this core
-assign sram_we_n_o  = 1'b1;
-assign sram_oe_n_o  = 1'b1;
+// i2s sound shared with sram_data_io [11:8]
+wire MCLK;
+wire SCLK;
+wire LRCLK;
+wire SDIN;
+assign sram_we_n_o = 1'b1;
+assign sram_ub_n_o = 1'b1;
+assign sram_lb_n_o = 1'b1;
+assign sram_addr_o = 20'b00000000000000000000;
+assign sram_data_io[15:12] = 4'hZ;
+assign sram_data_io[11:8] = {LRCLK, SDIN, SCLK, MCLK};
+assign sram_data_io[7:0] = 8'hZZ;
+assign sram_oe_n_o = 1'b1;
+assign stm_rst_o = 1'bz;
 
 //all the SD reading goes thru the microcontroller for this core
 assign sd_cs_n_o = 1'bZ;
@@ -168,15 +180,24 @@ wire        rotate    = status[2];
 wire  [1:0] scanlines = status[4:3];
 wire        blend = status[5];
 
-wire  [7:0] INP0 = ~{m_left, m_right,m_up, m_down,1'b0,m_fireB,m_fireA,m_fireC};
-wire  [7:0] INP1 = ~{m_left2,m_right2,m_up2, m_down2,1'b0,m_fire2B,m_fire2A,m_fire2C};
-//wire  [7:0] INP2 = ~{2'b00,m_two_players, m_one_player,3'b000, m_coin1};
-wire  [7:0] INP2 = ~{2'b00,btn_two_players, btn_one_player,3'b000, btn_coin};
+reg   [7:0] INP0, INP1, INP2;
+always @(*) begin				 
+	INP0 = ~{m_left, m_right,m_up, m_down,1'b0,m_fireB,m_fireA,m_fireC};
+	INP1 = ~{m_left2,m_right2,m_up2, m_down2,1'b0,m_fire2B,m_fire2A,m_fire2C};
+	//INP2 = ~{2'b00,m_two_players, m_one_player,3'b000, m_coin1};
+	INP2 = ~{2'b00,btn_two_players, btn_one_player,3'b000, btn_coin};
+	if (core_mod[3]) begin
+		//WaterMatch
+		INP0 = ~{m_left, m_right, m_up, m_down, m_left2,m_right2,m_up2,m_down2};
+		INP1 = ~{m_left3,m_right3,m_up3,m_down3,m_left4,m_right4,m_up4,m_down4};
+		INP2 = ~{m_fire3A | m_fire4A,m_fireA | m_fire2A,btn_two_players, btn_one_player,3'b000, btn_coin};
+	end
+end	
 
 wire  [7:0] DSW0 = status[15: 8];
 wire  [7:0] DSW1 = status[23:16];
 
-wire  [6:0] core_mod;  // [0]=SYS1/SYS2,[1]=H/V,[2]=H256/H240
+wire  [6:0] core_mod;  // [0]=SYS1/SYS2,[1]=H/V,[2]=H256/H240,[3]=4controllers
 wire  [1:0] orientation = { 1'b0, core_mod[1] };
 
 
@@ -197,6 +218,8 @@ wire  [1:0] buttons;
 wire  [1:0] switches;
 wire  [7:0] joystick_0;
 wire  [7:0] joystick_1;
+wire  [7:0] joystick_2;
+wire  [7:0] joystick_3;
 wire        key_pressed;
 wire        key_strobe;
 wire  [7:0] key_code;
@@ -406,6 +429,18 @@ dac(
     .dac_o(AUDIO_L)
 );
 
+// I2S audio
+audio_top audio_i2s
+(
+    .clk_50MHz ( clock_50_i ),
+    .dac_MCLK  ( MCLK ),
+    .dac_LRCK  ( LRCLK ),
+    .dac_SCLK  ( SCLK ),
+    .dac_SDIN  ( SDIN ),
+    .L_data    ( audio >>1 ),
+    .R_data    ( audio >>1 )
+);	
+
 
 reg [2:0]clk_div;
 always @(posedge clk_sys) begin
@@ -416,7 +451,8 @@ wire m_up, m_down, m_left, m_right, m_fireA, m_fireB, m_fireC, m_fireD, m_fireE,
 wire m_up2, m_down2, m_left2, m_right2, m_fire2A, m_fire2B, m_fire2C, m_fire2D, m_fire2E, m_fire2F, m_fire2G, m_fire2H, m_fire2I;
 wire m_tilt, m_coin1, m_coin2, m_coin3, m_coin4, m_one_player, m_two_players, m_three_players, m_four_players;
 
-wire m_right4, m_left4, m_down4, m_up4, m_right3, m_left3, m_down3, m_up3;
+wire m_up3, m_down3, m_left3, m_right3, m_fire3A, m_fire3B, m_fire3C, m_fire3D, m_fire3E, m_fire3F;
+wire m_up4, m_down4, m_left4, m_right4, m_fire4A, m_fire4B, m_fire4C, m_fire4D, m_fire4E, m_fire4F;
 
 //wire btn_one_player  = ~btn_n_i[1] | m_one_player;
 //wire btn_two_players = ~btn_n_i[2] | m_two_players;
@@ -460,7 +496,7 @@ kbd_joystick_ua #( .OSD_CMD    ( 3'b011 )) k_joystick
     .joyswap      ( 0 ),
 
     //-- player1 and player2 should get both joystick_0 and joystick_1
-    .oneplayer    ( 1 ),
+    .oneplayer    ( ~core_mod[3] ),
 
     //-- tilt, coin4-1, start4-1
     .controls     ( {m_tilt, m_coin4, m_coin3, m_coin2, m_coin1, m_four_players, m_three_players, m_two_players, m_one_player} ),

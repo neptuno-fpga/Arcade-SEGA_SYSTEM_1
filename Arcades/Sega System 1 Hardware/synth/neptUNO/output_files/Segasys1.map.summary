@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Nov 19 23:21:36 2020
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : Segasys1
+Top-level Entity Name : Segasys1_np1
+Family : Cyclone IV E
+Total logic elements : 11,972
+    Total combinational functions : 10,607
+    Dedicated logic registers : 3,916
+Total registers : 3916
+Total pins : 120
+Total virtual pins : 0
+Total memory bits : 222,272
+Embedded Multiplier 9-bit elements : 2
+Total PLLs : 1

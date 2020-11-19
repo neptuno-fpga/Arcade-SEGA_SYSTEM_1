@@ -1,0 +1,233 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -9.761
+TNS   : -155.798
+
+Type  : Slow 1200mV 85C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.473
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.754
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'SPI_SCK'
+Slack : 4.992
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'clock_50_i'
+Slack : 15.733
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SPI_SCK'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_50_i'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.835
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6.007
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'SPI_SCK'
+Slack : 9.477
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'SPI_SCK'
+Slack : 2.682
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.462
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 4.867
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 4.998
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_50_i'
+Slack : 9.651
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.984
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SPI_SCK'
+Slack : 13.569
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -9.410
+TNS   : -150.032
+
+Type  : Slow 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.818
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 4.293
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'SPI_SCK'
+Slack : 5.735
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clock_50_i'
+Slack : 15.960
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SPI_SCK'
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_50_i'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.721
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6.390
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'SPI_SCK'
+Slack : 9.961
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'SPI_SCK'
+Slack : 2.351
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.092
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 4.849
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 4.974
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_50_i'
+Slack : 9.523
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 10.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SPI_SCK'
+Slack : 13.473
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -8.009
+TNS   : -127.626
+
+Type  : Fast 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 5.189
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6.852
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'SPI_SCK'
+Slack : 8.677
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clock_50_i'
+Slack : 18.128
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SPI_SCK'
+Slack : 0.118
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.134
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_50_i'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 8.315
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'SPI_SCK'
+Slack : 11.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.581
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'SPI_SCK'
+Slack : 1.930
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 4.989
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 5.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_50_i'
+Slack : 9.270
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 10.165
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SPI_SCK'
+Slack : 13.032
+TNS   : 0.000
+
+------------------------------------------------------------

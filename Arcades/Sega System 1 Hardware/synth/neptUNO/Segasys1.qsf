@@ -310,6 +310,7 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to VGA_VS
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AUDIO_L
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to AUDIO_R
 set_instance_assignment -name CURRENT_STRENGTH_NEW 4MA -to SPI_DO
+set_global_assignment -name VHDL_FILE ../../i2s/audio_i2s.vhd
 set_global_assignment -name VERILOG_FILE joydecoder_2.v
 set_global_assignment -name VHDL_FILE kbd_joystick_ua.vhd
 set_global_assignment -name QIP_FILE ../../sn76489/sn76489.qip

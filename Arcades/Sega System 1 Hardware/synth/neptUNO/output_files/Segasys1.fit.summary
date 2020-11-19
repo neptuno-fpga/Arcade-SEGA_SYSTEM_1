@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Nov 19 23:23:26 2020
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : Segasys1
+Top-level Entity Name : Segasys1_np1
+Family : Cyclone IV E
+Device : EP4CE55F23C8
+Timing Models : Final
+Total logic elements : 11,501 / 55,856 ( 21 % )
+    Total combinational functions : 10,628 / 55,856 ( 19 % )
+    Dedicated logic registers : 3,822 / 55,856 ( 7 % )
+Total registers : 3890
+Total pins : 120 / 325 ( 37 % )
+Total virtual pins : 0
+Total memory bits : 222,272 / 2,396,160 ( 9 % )
+Embedded Multiplier 9-bit elements : 2 / 308 ( < 1 % )
+Total PLLs : 1 / 4 ( 25 % )
